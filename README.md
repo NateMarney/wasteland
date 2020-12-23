@@ -10,7 +10,7 @@ You role-play as a wanderer-scavenger fighting for survival in a harsh sci-fi wo
 
 ## Project Scope
 ### Team
-Project Wastelander is created by a two-man team, brothers Angelo and Nathan. Angelo is the lead programmer, but is also in charge of project organization, marketing, and recruitment. Nathan is in charge of assets, including models, textures, animations, and sound effects.
+Project Wastelander is created by a three-man team, brothers Angelo and Nathan, and Artist Danilo. Angelo is the lead programmer, but is also in charge of project organization, marketing, and recruitment. Nathan is an assistant programmer, but will mostly be focused on importing and creating including models, textures, animations, and sound effects. Danilo is the (lead?) artist, and will be focus on all sorts of asset creation.
 
 ### Budget
 The game has a zero dollar budget. Marketing will be done through social media posts (reddit, imgur, twitter, facebook, instagram, tumblr), word of mouth, email lists, sending free review copies, etc. Artists or musicians who join the team later will be offered a percentage of the revenue.
