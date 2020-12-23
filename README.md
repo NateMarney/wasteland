@@ -56,36 +56,36 @@ Damage dealt to enemies or players will be localized to specific parts of the bo
 ### Resource Management
 The player will have a very limited inventory space, so they will have to manage their inventory carefully. They will have to find safe places to store their belongings. Ammo will also be in limited supply. There will be vendors from which the player can purchase food, ammo, water, and other resources.
 
-#### Maintenence
+### Maintenence
 Weapons and armor will have to be maintained regularly or they will cease to function properly (won't be sighted in, might jam, won't fire more than one bullet, might explode). A big part of the game will involve going out and finding parts to replace and maintain your weapons and armor. 
 
-#### Weapon Mods
+### Weapon Mods
 The player will be able to attach modifications to weapons. For example, they may be able to attach scopes, extended magazines, bayonets, change ammo type, change grips, stocks, recoil pads, handguards, bipods, handgrips, etc.
 
-#### Factions and Reputation
+### Factions and Reputation
 There will be a lot of factions in the game, some of which tiny, and some of which large and which control a vast amount of land. Your interaction with these factions will determine your reputation with each faction. For example, if you are a known thief to one faction,they may be hostile or try to imprison you for your crimes.
 
 
 
-### Game Elements
+## Game Elements
 
-#### Factions
+### Factions
 
-#### Locations
+### Locations
 
-### Assets
+## Assets
 
-#### Models
+### Models
 
-##### Textures
+#### Textures
 
-##### Rigs/Skeletons
+#### Rigs/Skeletons
 
-##### Animations
+#### Animations
 
-#### Sound
+### Sound
 
-##### Sound Effects
+#### Sound Effects
 
-##### Music
+#### Music
 
