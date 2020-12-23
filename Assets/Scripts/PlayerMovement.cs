@@ -7,7 +7,9 @@ public class PlayerMovement : MonoBehaviour
 
     Animator animator; //animator reference variable
 
-    public float moveSpeed = 3f;
+
+    public float moveSpeedX = 2f;
+    public float moveSpeedZ = 3f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
 
@@ -33,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
+
         if(isGrounded && velocity.y < 0)
         {
             
@@ -42,9 +45,9 @@ public class PlayerMovement : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * moveX + transform.forward * moveZ;
+        Vector3 move = transform.right * moveX * moveSpeedX * Time.deltaTime + transform.forward * moveZ * moveSpeedZ * Time.deltaTime;
 
-        controller.Move(move * moveSpeed * Time.deltaTime);
+        controller.Move(move);
         
         // if player presses w key
         if (Input.GetKey("w"))
@@ -60,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("left shift") && Input.GetKey("w"))
         {
             animator.SetBool("isRunning", true);
-            controller.Move(move * moveSpeed * 2 * Time.deltaTime);
+            controller.Move(move * moveSpeedZ * 100 * Time.deltaTime);
         }
         else
         {
@@ -84,10 +87,6 @@ public class PlayerMovement : MonoBehaviour
         //    move *= 0.5;
         //    change cylinder size to be smaller
         //}
-
-        
-
-        
 
         velocity.y += gravity * Time.deltaTime;
 
