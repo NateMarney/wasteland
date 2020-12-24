@@ -22,7 +22,7 @@ public class MouseLook : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
     
         yRotation -= mouseY;
-        yRotation = Mathf.Clamp(yRotation, -90f, 90f);
+        yRotation = Mathf.Clamp(yRotation, -90, 85f);
 
         transform.localRotation = Quaternion.Euler(yRotation, 0f, 0f);
 
