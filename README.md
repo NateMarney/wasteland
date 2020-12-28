@@ -89,3 +89,119 @@ There will be a lot of factions in the game, some of which tiny, and some of whi
 
 #### Music
 
+
+# Directory structure:
+Everything is located in the 'Assets' folder.
+- Animation/
+	- Clips/
+		- Enemies/
+		- Player/
+			- FirstPerson/
+			- ThirdPerson/
+		- Vehicles/
+		- Weapons/
+	- Controllers/
+- Art/
+	- Fonts/
+	- Materials/
+		- Enemies/
+		- NPCs/
+		- Player/
+			- FirstPerson/
+			- ThirdPerson/
+		- Vehicles/
+		- VFX/
+		- Weapons/
+		- World/
+	- Models/
+		- Enemies/
+		- NPCs/
+		- Player/
+		    - FirstPerson/
+		    - ThirdPerson/
+		- Vehicles/
+		- Weapons/
+		- World/
+	- Textures
+		- Enemies/
+		- NPCs/
+		- Player/
+			- FirstPerson/
+			- ThirdPerson/
+		- UI/
+		- Vehicles/
+		- VFX/
+		- Weapons/
+		- World/
+- Audio/
+    - Mixers/
+    - Music/
+    - SFX/
+        - Enemies/
+        - Player/
+        - UI/
+        - Vehicles/
+        - Weapons/
+- Plugins/
+- Prefabs/
+	- Enemies/
+	- Projectiles/
+	- UI/
+	- Vehicles/
+	- VFX/
+	- Weapons/
+	- World/
+- Scenes/ 
+	- Scene1/
+	- Scene2/
+- Scripts/
+    - Editor/
+
+## Animation
+
+### Clips
+Animation Clips, which are .anim files.
+
+### Controllers
+Animation Controllers, which are .controller files.
+
+## Art
+
+### Fonts
+Imported or custom fonts. 
+
+### Materials
+Materials, which are .mat files, are collections of settings/inputs that a shader needs to render a specific mesh. Each mesh needs a material. 
+
+### Models
+Models, which are .fbx or .obj files, are collections of data for defining the geometry of an object. At the very least, a model includes a mesh. For dynamic objects, which we use .fbx files for, models also rigs/animation data. 
+
+### Textures 
+Textures, which are .png files, are often used in material (.mat) files to help define the look of an object.
+
+## Audio
+
+### Mixers
+Mixers are .mixer files which are used to control aspects of the audio, e.g., volume.
+
+### Music 
+.mp3 files for music.
+
+### SFX
+.mp3 files for sound effects.
+
+## Plugins
+3rd party code, including licenses.
+
+## Prefabs
+Prefabs, which are .prefab files, will be used by to build the world.
+
+## Scenes
+Scenes, which are .unity files, are the highest level, or "parent" object in Unity. 
+
+## Scripts
+Scripts, which are .cs files, are C# files to add functionality to the game. Often, they are attached as components to objects to add functionality.
+
+
+
+
