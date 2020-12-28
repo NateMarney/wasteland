@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+Moves the player character.
+*/
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -46,18 +49,37 @@ public class PlayerMovement : MonoBehaviour
         float moveZ = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * moveX * moveSpeedX * Time.deltaTime + transform.forward * moveZ * moveSpeedZ * Time.deltaTime;
+        
+        //velocity.x += move.x;
+        //velocity.z += move.z;
 
         controller.Move(move);
+
+        bool isWalking = animator.GetBool("isWalking");
+        bool isRunning = animator.GetBool("isRunning");
+        bool forwardPressed = Input.GetKey("w");
+        bool runPressed = Input.GetKey("left shift");
         
         // if player presses w key
-        if (Input.GetKey("w"))
+        if (!isWalking && forwardPressed)
         {
             // set the isWalking boolean to be true (located in Unity animator parameters)
             animator.SetBool("isWalking", true);
         }
-        else
+
+        if (isWalking && !forwardPressed)
         {
             animator.SetBool("isWalking", false);
+        }
+
+        if (!isRunning && (isWalking && runPressed))
+        {
+            animator.SetBool("isRunning", true);
+        }
+
+        if (!forwardPressed || !runPressed)
+        {
+            animator.SetBool("isRunning", false);
         }
 
         if (Input.GetKey("left shift") && Input.GetKey("w"))
